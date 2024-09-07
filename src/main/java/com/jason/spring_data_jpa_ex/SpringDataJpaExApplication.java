@@ -33,8 +33,8 @@ public class SpringDataJpaExApplication {
 //		s3.setMarks(80);
 //
 //		s4.setRollNo(4);
-//		s3.setName("Pulkit");
-//		s3.setMarks(70);
+//		s4.setName("Pulkit");
+//		s4.setMarks(70);
 //
 //		repo.save(s1);
 //		repo.save(s2);
@@ -42,8 +42,14 @@ public class SpringDataJpaExApplication {
 
 //		System.out.println(repo.findAll());
 
-		Optional<Student> st = repo.findById(1);
-		System.out.println(st.orElse(new Student()));
+//		Optional<Student> st = repo.findById(1);
+//		System.out.println(st.orElse(new Student()));
+
+//		System.out.println(repo.findByName("Kaukau"));
+
+//		System.out.println(repo.findByMarks(100));
+
+		System.out.println(repo.findByMarksGreaterThan(85));
 	}
 
 }
