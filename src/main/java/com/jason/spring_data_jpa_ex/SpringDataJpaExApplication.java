@@ -22,15 +22,21 @@ public class SpringDataJpaExApplication {
 		s1.setName("Mohit");
 		s1.setMarks(100);
 
-		s1.setRollNo(2);
-		s1.setName("Sohit");
-		s1.setMarks(90);
+		s2.setRollNo(2);
+		s2.setName("Sohit");
+		s2.setMarks(90);
 
-		s1.setRollNo(3);
-		s1.setName("Kaukau");
-		s1.setMarks(80);
+		s3.setRollNo(3);
+		s3.setName("Kaukau");
+		s3.setMarks(80);
+
+		s4.setRollNo(4);
+		s3.setName("Pulkit");
+		s3.setMarks(70);
 
 		repo.save(s1);
+		repo.save(s2);
+		repo.save(s3);
 	}
 
 }
