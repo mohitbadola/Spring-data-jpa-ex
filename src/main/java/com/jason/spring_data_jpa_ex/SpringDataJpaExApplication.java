@@ -15,8 +15,8 @@ public class SpringDataJpaExApplication {
 
 		StudentRepo repo = context.getBean(StudentRepo.class);
 
-//		Student s1 = context.getBean(Student.class);
-//		Student s2 = context.getBean(Student.class);
+		Student s1 = context.getBean(Student.class);
+		Student s2 = context.getBean(Student.class);
 //		Student s3 = context.getBean(Student.class);
 //		Student s4 = context.getBean(Student.class);
 //
@@ -26,7 +26,7 @@ public class SpringDataJpaExApplication {
 //
 //		s2.setRollNo(2);
 //		s2.setName("Sohit");
-//		s2.setMarks(90);
+//		s2.setMarks(88);
 //
 //		s3.setRollNo(3);
 //		s3.setName("Kaukau");
@@ -40,6 +40,8 @@ public class SpringDataJpaExApplication {
 //		repo.save(s2);
 //		repo.save(s3);
 
+//		repo.delete(s2);
+
 //		System.out.println(repo.findAll());
 
 //		Optional<Student> st = repo.findById(1);
@@ -49,7 +51,7 @@ public class SpringDataJpaExApplication {
 
 //		System.out.println(repo.findByMarks(100));
 
-		System.out.println(repo.findByMarksGreaterThan(85));
+//		System.out.println(repo.findByMarksGreaterThan(85));
 	}
 
 }
